@@ -86,3 +86,9 @@ finances = [
 	['Jan-2017', 138230],
 	['Feb-2017', 671099],
 ]
+
+# ------Extract months and revenue------
+months = [row[0] for row in finances]
+values = [row[1] for row in finances]
+print(months)
+print(values)
