@@ -1,3 +1,5 @@
+from statistics import mean
+
 finances = [
 	['Jan-2010', 867884],
 	['Feb-2010', 984655],
@@ -99,4 +101,7 @@ total = sum(values)
 
 # ------Month-to-Month-Changes------
 changes = [values[i] - values[i - 1 ] for i in range(1, len(values)) ]
-print(changes)
+
+# Average change (float, rounded to 2 decimals)
+average_change = round(mean(changes), 2)
+print(average_change)
