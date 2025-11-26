@@ -93,8 +93,10 @@ values = [row[1] for row in finances]
 
 # ------Total Months------
 total_months = len(months)
-print(total_months)
 
 #-----Total Profit/Loss------
 total = sum(values)
-print(total)
+
+# ------Month-to-Month-Changes------
+changes = [values[i] - values[i - 1 ] for i in range(1, len(values)) ]
+print(changes)
