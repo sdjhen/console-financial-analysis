@@ -104,4 +104,12 @@ changes = [values[i] - values[i - 1 ] for i in range(1, len(values)) ]
 
 # Average change (float, rounded to 2 decimals)
 average_change = round(mean(changes), 2)
-print(average_change)
+
+#------Greatest Increase/Decrease------
+max_change = max(changes)
+min_change = min(changes)
+print(max_change, min_change)
+
+max_month = months[changes.index(max_change) + 1]
+min_month = months[changes.index(min_change) + 1]
+print(max_month, min_month)
