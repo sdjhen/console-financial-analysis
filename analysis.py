@@ -90,5 +90,11 @@ finances = [
 # ------Extract months and revenue------
 months = [row[0] for row in finances]
 values = [row[1] for row in finances]
-print(months)
-print(values)
+
+# ------Total Months------
+total_months = len(months)
+print(total_months)
+
+#-----Total Profit/Loss------
+total = sum(values)
+print(total)
